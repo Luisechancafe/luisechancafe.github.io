@@ -1,0 +1,61 @@
+/* ============================================================
+   base.css — elements + shared editorial primitives
+   ============================================================ */
+body{
+  font-family:var(--font-text);
+  font-size:var(--fs-body);
+  background:var(--paper);
+  color:var(--ink);
+  overflow-x:hidden;
+  transition:background var(--dur-theme) var(--ease), color var(--dur-theme) var(--ease);
+  /* retícula de arquitecto, textura de craft silencioso */
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px;
+}
+@media (hover:hover) and (pointer:fine){ body{ cursor:none; } }
+
+::selection{ background:var(--accent); color:var(--on-accent); }
+
+h1,h2,h3{ font-family:var(--font-display); font-weight:600; line-height:.94; letter-spacing:-0.015em; font-optical-sizing:auto; }
+
+.tabular{ font-variant-numeric:tabular-nums lining-nums; }
+
+/* eyebrow / foliado en versalitas */
+.eyebrow{
+  display:flex; align-items:center; gap:.6rem;
+  font-size:var(--fs-meta); text-transform:uppercase; letter-spacing:.16em;
+  color:var(--ink-2); font-weight:500;
+}
+.eyebrow .folio{
+  font-family:var(--font-display); font-weight:600; letter-spacing:0;
+  color:var(--accent); font-size:1rem;
+}
+
+.prose{ font-size:var(--fs-lead); line-height:1.6; color:var(--ink-2); max-width:56ch; }
+.prose + .prose{ margin-top:var(--s3); }
+
+/* tags / metadatos */
+.tags{ display:flex; flex-wrap:wrap; gap:.5rem; margin-top:var(--s3); }
+.tag{
+  font-size:.72rem; text-transform:uppercase; letter-spacing:.1em; color:var(--ink-2);
+  padding:.35rem .7rem; border:1px solid var(--line); border-radius:999px;
+  transition:color var(--dur-micro) var(--ease), border-color var(--dur-micro) var(--ease);
+}
+.tag:hover{ color:var(--accent); border-color:var(--accent); }
+
+/* enlace con subrayado que se dibuja */
+.ulink{
+  background-image:linear-gradient(var(--accent),var(--accent));
+  background-repeat:no-repeat; background-position:0 100%; background-size:0% 1.5px;
+  transition:background-size .4s var(--ease), color var(--dur-micro) var(--ease);
+  padding-bottom:2px;
+}
+.ulink:hover{ background-size:100% 1.5px; }
+
+.chapter{ padding: var(--s7) var(--mx); position:relative; }
+@media (max-width:768px){ .chapter{ padding: var(--s6) var(--mx); } }
+.chapter__sub{ margin-top:var(--s3); font-size:var(--fs-lead); color:var(--ink-2); max-width:50ch; }
+
+.container{ max-width:1400px; margin-inline:auto; }

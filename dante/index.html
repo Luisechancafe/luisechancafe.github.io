@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+
+  <title>Dante · Asistente personal de Luise Chancafe</title>
+  <meta name="description" content="Dante es el asistente personal de uso propio de Luise Chancafe: lee su correo y su agenda de Google para avisarle de lo importante. No es un servicio público." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://luisechancafe.github.io/dante/" />
+  <meta name="author" content="Luis Ernesto Chancafe Odar" />
+
+  <link rel="icon" type="image/png" href="../assets/favicon.png?v=5" />
+  <link rel="stylesheet" href="../assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="../css/reset.css?v=5" />
+  <link rel="stylesheet" href="../css/tokens.css?v=5" />
+  <link rel="stylesheet" href="../css/base.css?v=5" />
+
+  <!-- Página de la app «Dante» para la pantalla de consentimiento de Google (proyecto dante-mac-mini).
+       Mismo sistema visual que luise.pro (CSS y fuentes copiados). Sin JS: el cursor nativo se recupera aquí. -->
+  <style>
+    html,body{ background:var(--paper); color:var(--ink); }
+    body{ cursor:auto !important; }
+    .legal-head, .legal, .legal-foot{ padding-inline:var(--mx); }
+    .legal-head{
+      display:flex; align-items:center; justify-content:space-between; gap:var(--s2);
+      padding-top:var(--s4); padding-bottom:var(--s3); border-bottom:1px solid var(--line); margin-bottom:var(--s4);
+    }
+    .legal-brand{ display:flex; align-items:center; gap:.6rem; text-decoration:none; color:var(--ink);
+      font-family:var(--font-display); font-weight:600; font-size:1.05rem; }
+    .legal-brand img{ width:30px; height:30px; border-radius:2px; }
+    .legal{ padding-bottom:var(--s6); }
+    .legal p, .legal li{ max-width:66ch; color:var(--ink-2); line-height:1.65; }
+    .legal p + p{ margin-top:var(--s2); }
+    .legal h1{ max-width:20ch; font-size:clamp(2.2rem,6vw,3.4rem); margin:var(--s2) 0 var(--s3); }
+    .legal h2{ max-width:34ch; font-size:1.35rem; margin:var(--s5) 0 var(--s2); }
+    .legal ul{ margin:var(--s2) 0 0 1.1rem; }
+    .legal li{ margin-bottom:.5rem; }
+    .legal a{ color:var(--ink); border-bottom:1px solid var(--accent); text-decoration:none; }
+    .legal a:hover{ color:var(--accent); }
+    .aviso{ border-left:3px solid var(--accent); background:var(--paper-2); padding:var(--s3);
+      border-radius:var(--r-card); margin-bottom:var(--s4); max-width:66ch; }
+    .aviso strong{ color:var(--ink); }
+    .legal-foot{ margin-top:var(--s5); padding-top:var(--s3); padding-bottom:var(--s4); border-top:1px solid var(--line);
+      font-size:var(--fs-meta); text-transform:uppercase; letter-spacing:.14em; color:var(--ink-2); }
+    .legal-foot a{ border-bottom:1px solid var(--line); color:var(--ink-2); text-decoration:none; }
+  </style>
+</head>
+<body>
+
+<header class="legal-head">
+  <a class="legal-brand" href="/dante/">
+    <img src="../assets/favicon.png?v=5" alt="" width="30" height="30" />
+    <span>Luise Chancafe</span>
+  </a>
+  <span class="eyebrow">Dante</span>
+</header>
+
+<main class="legal" id="contenido">
+  <span class="eyebrow">Asistente personal · uso propio</span>
+  <h1>Dante</h1>
+
+  <div class="aviso">
+    <p><strong>Dante no es un servicio público.</strong> Es un asistente personal que Luise Chancafe usa solo para sí mismo. No admite otros usuarios ni se vende, y solo puede acceder a la cuenta de Google <strong>lschancafe@gmail.com</strong>.</p>
+  </div>
+
+  <p>Dante funciona en un ordenador propio de Luise y le responde por WhatsApp y por una aplicación web privada. Para avisarle de lo importante y contestar preguntas sobre su día, se conecta a su Gmail y a su Google Calendar.</p>
+
+  <h2>Qué hace con Google</h2>
+  <ul>
+    <li><strong>Gmail, lectura:</strong> lista los correos recibidos (remitente, asunto y fecha) y resume un hilo cuando Luise se lo pide. Le avisa de los correos importantes: plazos, facturas, citas, bancos y respuestas de personas con las que se escribe.</li>
+    <li><strong>Gmail, borradores:</strong> puede dejar un borrador de respuesta en Gmail. <strong>Nunca envía correos</strong>: los borradores los revisa y los envía Luise.</li>
+    <li><strong>Google Calendar, eventos:</strong> lee la agenda para el resumen de la mañana y los recordatorios. Solo crea, mueve o borra un evento cuando Luise lo confirma expresamente.</li>
+  </ul>
+
+  <h2>Privacidad</h2>
+  <p>Los datos de Google no se venden, no se usan para publicidad y no se comparten con otras personas. El detalle está en la <a href="/dante/privacidad/">política de privacidad de Dante</a>.</p>
+
+  <h2>Contacto</h2>
+  <p>Luis Ernesto Chancafe Odar · <a href="mailto:lschancafe@gmail.com">lschancafe@gmail.com</a></p>
+
+  <h2 lang="en">In English</h2>
+  <p lang="en">Dante is a private, single-user assistant used only by Luise Chancafe for his own Google account (lschancafe@gmail.com). It reads Gmail, creates drafts (it never sends email) and reads or changes Calendar events only after explicit confirmation. Google data is not sold, not used for advertising and not shared with other people. See the <a href="/dante/privacidad/">privacy policy</a>.</p>
+</main>
+
+<footer class="legal-foot">
+  <nav aria-label="Enlaces del pie">
+    <a href="/dante/">Dante</a> · <a href="/dante/privacidad/">Privacidad de Dante</a>
+  </nav>
+</footer>
+
+</body>
+</html>

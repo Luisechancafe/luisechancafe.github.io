@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark" />
+
+  <title>Política de privacidad de Dante · Luise Chancafe</title>
+  <meta name="description" content="Qué datos de Google lee Dante, el asistente personal de uso propio de Luise Chancafe, para qué, dónde se guardan y cómo se revoca el acceso." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://luisechancafe.github.io/dante/privacidad/" />
+  <meta name="author" content="Luis Ernesto Chancafe Odar" />
+
+  <link rel="icon" type="image/png" href="../../assets/favicon.png?v=5" />
+  <link rel="stylesheet" href="../../assets/fonts/fonts.css" />
+  <link rel="stylesheet" href="../../css/reset.css?v=5" />
+  <link rel="stylesheet" href="../../css/tokens.css?v=5" />
+  <link rel="stylesheet" href="../../css/base.css?v=5" />
+
+  <!-- Política de privacidad de la app «Dante» para la pantalla de consentimiento de Google (proyecto dante-mac-mini).
+       Mismo sistema visual que luise.pro (CSS y fuentes copiados). Sin JS: el cursor nativo se recupera aquí. -->
+  <style>
+    html,body{ background:var(--paper); color:var(--ink); }
+    body{ cursor:auto !important; }
+    .legal-head, .legal, .legal-foot{ padding-inline:var(--mx); }
+    .legal-head{
+      display:flex; align-items:center; justify-content:space-between; gap:var(--s2);
+      padding-top:var(--s4); padding-bottom:var(--s3); border-bottom:1px solid var(--line); margin-bottom:var(--s4);
+    }
+    .legal-brand{ display:flex; align-items:center; gap:.6rem; text-decoration:none; color:var(--ink);
+      font-family:var(--font-display); font-weight:600; font-size:1.05rem; }
+    .legal-brand img{ width:30px; height:30px; border-radius:2px; }
+    .legal{ padding-bottom:var(--s6); }
+    .legal p, .legal li{ max-width:66ch; color:var(--ink-2); line-height:1.65; }
+    .legal p + p{ margin-top:var(--s2); }
+    .legal h1{ max-width:20ch; font-size:clamp(2.2rem,6vw,3.4rem); margin:var(--s2) 0 var(--s3); }
+    .legal h2{ max-width:34ch; font-size:1.35rem; margin:var(--s5) 0 var(--s2); }
+    .legal ul{ margin:var(--s2) 0 0 1.1rem; }
+    .legal li{ margin-bottom:.5rem; }
+    .legal a{ color:var(--ink); border-bottom:1px solid var(--accent); text-decoration:none; }
+    .legal a:hover{ color:var(--accent); }
+    .aviso{ border-left:3px solid var(--accent); background:var(--paper-2); padding:var(--s3);
+      border-radius:var(--r-card); margin-bottom:var(--s4); max-width:66ch; }
+    .aviso strong{ color:var(--ink); }
+    .legal-foot{ margin-top:var(--s5); padding-top:var(--s3); padding-bottom:var(--s4); border-top:1px solid var(--line);
+      font-size:var(--fs-meta); text-transform:uppercase; letter-spacing:.14em; color:var(--ink-2); }
+    .legal-foot a{ border-bottom:1px solid var(--line); color:var(--ink-2); text-decoration:none; }
+  </style>
+</head>
+<body>
+
+<header class="legal-head">
+  <a class="legal-brand" href="/dante/">
+    <img src="../../assets/favicon.png?v=5" alt="" width="30" height="30" />
+    <span>Luise Chancafe</span>
+  </a>
+  <span class="eyebrow">Dante</span>
+</header>
+
+<main class="legal" id="contenido">
+  <span class="eyebrow">Actualizado el <time datetime="2026-10-14">14 de octubre de 2026</time></span>
+  <h1>Política de privacidad de Dante</h1>
+
+  <div class="aviso">
+    <p><strong>Dante es un asistente personal de uso propio.</strong> Solo lo usa su titular y solo accede a una cuenta de Google: <strong>lschancafe@gmail.com</strong>, la suya. No recoge datos de otros usuarios porque no tiene otros usuarios.</p>
+  </div>
+
+  <h2>Responsable</h2>
+  <p>Luis Ernesto Chancafe Odar · <a href="mailto:lschancafe@gmail.com">lschancafe@gmail.com</a>, Granollers (Barcelona, España).</p>
+
+  <h2>Qué datos de Google lee y con qué permisos</h2>
+  <ul>
+    <li><strong>Gmail, solo lectura</strong> (<code>gmail.readonly</code>): remitente, asunto, fecha y estado de lectura de los correos y, cuando el titular pide un resumen, el contenido del hilo.</li>
+    <li><strong>Gmail, borradores</strong> (<code>gmail.compose</code>): crear borradores de respuesta. Dante <strong>no envía correos</strong>: no tiene ninguna función de envío y los borradores los revisa y los envía el titular.</li>
+    <li><strong>Google Calendar, eventos</strong> (<code>calendar.events</code>): leer los eventos del calendario principal y crear, mover o borrar un evento solo después de que el titular lo confirme de forma expresa.</li>
+  </ul>
+
+  <h2>Para qué los usa</h2>
+  <ul>
+    <li>Responder al titular cuando pregunta por su correo o su agenda.</li>
+    <li>Avisarle de los correos importantes y recordarle sus próximos eventos.</li>
+    <li>Prepararle un resumen cada mañana.</li>
+  </ul>
+  <p>Los datos de Google <strong>no se venden, no se usan para publicidad, no se usan para entrenar modelos de IA y no se comparten con otras personas</strong>.</p>
+
+  <h2>Quién más los procesa</h2>
+  <p>Para entender las preguntas y redactar las respuestas, Dante envía al proveedor de inteligencia artificial que corresponda solo lo necesario para cada respuesta: Google (Gemini), Anthropic (Claude) y, como respaldo si los anteriores fallan, DeepSeek. Estos proveedores actúan solo como encargados del procesamiento para generar esa respuesta. Los mensajes de Dante llegan al titular por WhatsApp y por una aplicación web privada a la que solo él tiene acceso.</p>
+
+  <h2>Dónde se guardan y cuánto tiempo</h2>
+  <ul>
+    <li>Dante funciona en un ordenador propio del titular. Las claves de acceso a Google se guardan cifradas en el llavero del sistema, nunca en ficheros ni en repositorios.</li>
+    <li>En ese ordenador se guarda lo mínimo para no repetir avisos: los identificadores de los correos ya revisados, las direcciones de los remitentes y el texto de los avisos enviados. No se guarda una copia del correo ni de la agenda.</li>
+    <li>Todo se conserva solo mientras el titular use Dante y se borra cuando él lo decida.</li>
+  </ul>
+
+  <h2>Cómo se revoca el acceso</h2>
+  <p>El acceso se puede retirar en cualquier momento desde <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. A partir de ese momento Dante deja de poder leer el correo y la agenda.</p>
+
+  <h2>Política de datos de usuario de Google</h2>
+  <p>El uso que hace Dante de la información recibida de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de datos de usuario de los servicios de API de Google</a>, incluidos los requisitos de uso limitado.</p>
+
+  <h2 lang="en">In English</h2>
+  <p lang="en">Dante is a private, single-user assistant that only accesses its owner's Google account (lschancafe@gmail.com) with gmail.readonly, gmail.compose (drafts only; it never sends email) and calendar.events (changes only after explicit confirmation). Google user data is used only to answer the owner, alert him about important email and remind him of events. It is not sold, not used for advertising, not used to train AI models and not shared with other people; it is processed by AI providers (Google Gemini, Anthropic Claude and, as a fallback, DeepSeek) only to generate each answer. Dante's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Access can be revoked at any time at myaccount.google.com/permissions. Contact: lschancafe@gmail.com.</p>
+</main>
+
+<footer class="legal-foot">
+  <nav aria-label="Enlaces del pie">
+    <a href="/dante/">Dante</a> · <a href="/dante/privacidad/">Privacidad de Dante</a>
+  </nav>
+</footer>
+
+</body>
+</html>
